@@ -12,6 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/nexus/prebuilt/bin/sysinit:system/bin/sysinit
+
+# PureNexus-specific init file
+PRODUCT_COPY_FILES += \
+    vendor/nexus/prebuilt/etc/init.purenexus.rc:root/init.purenexus.rc
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
