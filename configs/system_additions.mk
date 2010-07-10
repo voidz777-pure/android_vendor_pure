@@ -12,6 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/pure/prebuilt/bin/sysinit:system/bin/sysinit
+
+# Pure-specific init file
+PRODUCT_COPY_FILES += \
+    vendor/pure/prebuilt/etc/init.pure.rc:root/init.pure.rc
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/pure/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
