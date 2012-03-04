@@ -12,12 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/nexus/configs/aosp_fixes.mk
-include vendor/nexus/configs/nexus_main.mk
-include vendor/nexus/configs/system_additions.mk
-
-# Telephony packages
-PRODUCT_PACKAGES += \
-    Stk \
-    CellBroadcastReceiver
-
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/nexus/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/nexus/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/nexus/prebuilt/bin/50-base.sh:system/addon.d/50-base.sh \
