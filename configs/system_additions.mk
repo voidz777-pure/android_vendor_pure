@@ -17,3 +17,7 @@ PRODUCT_COPY_FILES += \
     vendor/pure/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/pure/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/pure/prebuilt/bin/50-base.sh:system/addon.d/50-base.sh \
+
+# Security Enhanced Linux
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.selinux=1
