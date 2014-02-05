@@ -27,3 +27,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true
 
+# Thank you, please drive thru!
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.dun.override=0
