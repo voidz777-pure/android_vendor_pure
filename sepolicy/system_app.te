@@ -1,2 +1,4 @@
 allow system_app unlabeled:filesystem getattr;
 
+# Boot animation
+allow system_app ctl_bootanim_prop:property_service set;
