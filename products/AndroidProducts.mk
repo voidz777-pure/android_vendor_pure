@@ -24,6 +24,9 @@ endif
 ifeq (nexus_flounder,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_flounder.mk
 endif
+ifeq (nexus_fugu,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_fugu.mk
+endif
 ifeq (nexus_hammerhead,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_hammerhead.mk
 endif
