@@ -15,6 +15,10 @@
 include vendor/nexus/configs/system_additions.mk
 include vendor/nexus/configs/version.mk
 
+# Include TV overlays
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/nexus/overlay/tv
+
 # Google property overides
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest
