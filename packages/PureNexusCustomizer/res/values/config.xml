@@ -23,7 +23,10 @@
         <!-- Apps row -->
         <item>com.netflix.ninja</item>                  <!-- Netflix -->
         <item>com.hulu.livingroomplus</item>            <!-- Hulu -->
-        <item>org.xbmc.kodi</item>                      <!-- Kodi -->
+        <item>com.cbs.ott</item>                        <!-- CBS -->
+        <item>com.sling</item>
+        <item>com.showtime.showtimeanytime</item>
+        <item>com.HBO</item>
 
         <!-- Lowest priority packages down here -->
         <item>com.android.vending</item>
@@ -31,6 +34,7 @@
         <item>com.google.android.youtube.tv</item>
         <item>com.google.android.music</item>
         <item>com.google.android.play.games</item>
+        <item>com.songza.tv</item>
     </string-array>
 
     <!-- DO NOT TRANSLATE -->
