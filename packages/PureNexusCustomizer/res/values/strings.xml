@@ -8,6 +8,8 @@
     <string name="inputs_row_title">My Inputs</string>
     <string name="settings_row_title">My Settings</string>
 
+    <!-- Content description for Browser -->
+    <string name="browser">Browser</string>
     <!-- Content description for SuperSU -->
     <string name="supersu">SuperSU</string>
     <!-- Content description for banner to encourage users to download the SuperSU App -->

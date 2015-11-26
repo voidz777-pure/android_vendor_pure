@@ -46,6 +46,7 @@ public class PartnerReceiver extends BroadcastReceiver {
     private static final String PARTNER_GROUP = "partner_row_entry";
     private static final String BLACKLIST_PACKAGE = "com.google.android.leanbacklauncher.replacespackage";
 
+    private static final String BROWSER_PKG_NAME = "com.android.browser";
     private static final String SU_PKG_NAME = "eu.chainfire.supersu";
     private static final String KODI_PKG_NAME = "org.xbmc.kodi";
 
@@ -73,6 +74,7 @@ public class PartnerReceiver extends BroadcastReceiver {
             postNotification(getPackageName(intent));
         } else if (ACTION_PARTNER_CUSTOMIZATION.equals(action)) {
             mRowCutoff = intent.getIntExtra(EXTRA_ROW_WRAPPING_CUTOFF, 0);
+            postNotification(BROWSER_PKG_NAME);
             postNotification(SU_PKG_NAME);
             postNotification(KODI_PKG_NAME);
         }
@@ -86,15 +88,22 @@ public class PartnerReceiver extends BroadcastReceiver {
         int backupTitleId;
 
         switch (pkgName) {
-            case SU_PKG_NAME:
+           case BROWSER_PKG_NAME:
                 sort = 1;
+                resId = R.drawable.ic_browser_banner;
+                backupResId = R.drawable.ic_browser_banner;
+                titleId = R.string.browser;
+                backupTitleId = R.string.browser;
+                break;
+            case SU_PKG_NAME:
+                sort = 2;
                 resId = R.drawable.ic_supersu;
                 backupResId = R.drawable.ic_try_supersu;
                 titleId = R.string.supersu;
                 backupTitleId = R.string.try_supersu;
                 break;
             case KODI_PKG_NAME:
-                sort = 2;
+                sort = 3;
                 resId = R.drawable.ic_kodi;
                 backupResId = R.drawable.ic_try_kodi;
                 titleId = R.string.kodi;
