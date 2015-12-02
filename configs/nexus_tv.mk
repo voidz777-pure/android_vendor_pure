@@ -21,7 +21,8 @@ PRODUCT_PACKAGE_OVERLAYS += \
 
 # Optional Packages
 PRODUCT_PACKAGES += \
-    Browser
+    Browser \
+    LockClock
 
 # Google property overides
 PRODUCT_PROPERTY_OVERRIDES += \
