@@ -30,6 +30,9 @@ endif
 ifeq (nexus_hammerhead,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_hammerhead.mk
 endif
+ifeq (nexus_molly,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_molly.mk
+endif
 ifeq (nexus_shamu,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_shamu.mk
 endif
