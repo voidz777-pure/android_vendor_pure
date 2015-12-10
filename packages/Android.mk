@@ -12,18 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/nexus/configs/system_additions.mk
-include vendor/nexus/configs/version.mk
+ifeq ($(PRODUCT_IS_ATV),true)
 
-# Include TV overlays
-PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/nexus/overlay/tv
+LOCAL_PATH := $(call my-dir)
 
-# Google property overides
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.com.android.wifi-watchlist=GoogleGuest
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
-# Include our custom apps
-PRODUCT_PACKAGES += \
-    AppDrawer \
-    PureNexusCustomizer
+endif
