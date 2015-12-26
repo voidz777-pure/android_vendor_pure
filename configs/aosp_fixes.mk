@@ -22,3 +22,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.error.receiver.system.apps=com.google.android.gms \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dataroaming=false
+
+# Proprietary latinime libs needed for Keyboard swyping
+ifneq ($(filter shamu,$(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES += \
+    vendor/pure/prebuilt/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+else
+PRODUCT_COPY_FILES += \
+    vendor/pure/prebuilt/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
+endif
