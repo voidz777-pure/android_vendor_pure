@@ -26,6 +26,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.rotation_locked=true \
     ro.opa.eligible_device=true
 
+# Proprietary latinime libs needed for Keyboard swyping
+ifneq ($(filter shamu,$(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES += \
+    vendor/pure/prebuilt/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+else
+PRODUCT_COPY_FILES += \
+    vendor/pure/prebuilt/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
+endif
+
 # Camera Effects for devices without a vendor partition
 ifneq ($(filter shamu,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES +=  \
