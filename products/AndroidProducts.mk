@@ -18,3 +18,6 @@ endif
 ifeq (pure_bullhead,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pure_bullhead.mk
 endif
+ifeq (pure_shamu,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pure_shamu.mk
+endif
