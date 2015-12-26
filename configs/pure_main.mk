@@ -12,21 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Include pure telephony configuration
-include vendor/pure/configs/pure_phone.mk
+# Include overlays
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/pure/overlay/common
 
-# Inherit AOSP device configuration for angler
-$(call inherit-product, device/huawei/angler/aosp_angler.mk)
-
-# Override AOSP build properties
-PRODUCT_NAME := angler
-PRODUCT_BRAND := google
-PRODUCT_DEVICE := angler
-PRODUCT_MODEL := Nexus 6P
-PRODUCT_MANUFACTURER := Huawei
-
-# Device Fingerprint
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=angler \
-    BUILD_FINGERPRINT=google/angler/angler:7.1.1/NUF26N/3687344:user/release-keys \
-    PRIVATE_BUILD_DESC="angler-user 7.1.1 NUF26N 3687344 release-keys"
+# Main Required Packages
+PRODUCT_PACKAGES += \
+    Launcher3 \
+    LiveWallpapersPicker
