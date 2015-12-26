@@ -13,6 +13,7 @@
 # limitations under the License.
 
 include vendor/pure/configs/aosp_fixes.mk
+include vendor/pure/configs/bootanimation.mk
 include vendor/pure/configs/pure_main.mk
 include vendor/pure/configs/system_additions.mk
 
