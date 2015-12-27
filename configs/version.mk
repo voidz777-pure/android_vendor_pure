@@ -12,18 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/pure/configs/aosp_fixes.mk
-include vendor/pure/configs/bootanimation.mk
-include vendor/pure/configs/pure_main.mk
-include vendor/pure/configs/system_additions.mk
-include vendor/pure/configs/version.mk
+#PureNexus versioning
+ifndef PURE_BUILD_TYPE
+    PURE_BUILD_TYPE := HOMEMADE
+endif
 
-# Telephony packages
-PRODUCT_PACKAGES += \
-    Stk \
-    CellBroadcastReceiver
+PURE_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-$(PURE_BUILD_TYPE)
 
-# Allow tethering without provisioning app
 PRODUCT_PROPERTY_OVERRIDES += \
-    net.tethering.noprovisioning=true
+    ro.pure.version=$(PURE_VERSION)
 
