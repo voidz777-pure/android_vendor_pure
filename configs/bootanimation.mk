@@ -21,6 +21,10 @@ ifneq ($(filter bullhead,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/pure/prebuilt/bootanimation/1080.zip:system/media/bootanimation.zip
 endif
+ifneq ($(filter dragon,$(TARGET_PRODUCT)),)
+    PRODUCT_COPY_FILES += \
+        vendor/pure/prebuilt/bootanimation/1440.zip:system/media/bootanimation.zip
+endif
 ifneq ($(filter marlin,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/pure/prebuilt/bootanimation/1440.zip:system/media/bootanimation.zip
