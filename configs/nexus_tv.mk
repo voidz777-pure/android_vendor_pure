@@ -19,6 +19,10 @@ include vendor/nexus/configs/version.mk
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/nexus/overlay/tv
 
+# Optional Packages
+PRODUCT_PACKAGES += \
+    Busybox
+
 # Google property overides
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest
