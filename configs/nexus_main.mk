@@ -25,3 +25,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LockClock \
     WallpaperPicker
+
+# Busybox
+PRODUCT_PACKAGES += \
+    Busybox

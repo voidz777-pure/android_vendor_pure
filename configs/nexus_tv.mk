@@ -22,6 +22,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
 # Optional Packages
 PRODUCT_PACKAGES += \
     Browser \
+    Busybox \
     LockClock
 
 # Google property overides
