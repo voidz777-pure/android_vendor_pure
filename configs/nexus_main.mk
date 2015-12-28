@@ -25,3 +25,7 @@ PRODUCT_PACKAGES += \
 #Custom Packages
 PRODUCT_PACKAGES += \
     WallpaperPicker
+
+# Busybox
+PRODUCT_PACKAGES += \
+    Busybox
