@@ -23,6 +23,7 @@ PRODUCT_PACKAGES += \
 
 #Custom Packages
 PRODUCT_PACKAGES += \
+    PureNexusSettings \
     LockClock \
     WallpaperPicker
 
