@@ -19,6 +19,11 @@ include vendor/nexus/configs/version.mk
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/nexus/overlay/tv
 
+# Key layout files
+PRODUCT_COPY_FILES += \
+    vendor/nexus/prebuilt/usr/keylayout/AliTV_Remote_V1_Airmouse.kl:system/usr/keylayout/AliTV_Remote_V1_Airmouse.kl \
+    vendor/nexus/prebuilt/usr/idc/AliTV_Remote_V1_Airmouse.idc:system/usr/idc/AliTV_Remote_V1_Airmouse.idc \
+
 # Optional Packages
 PRODUCT_PACKAGES += \
     Busybox
