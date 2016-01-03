@@ -39,3 +39,6 @@ endif
 ifeq (nexus_shamu,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_shamu.mk
 endif
+ifeq (nexus_tuna,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_tuna.mk
+endif
