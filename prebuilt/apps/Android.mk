@@ -12,27 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Include overlays
-PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/nexus/overlay/common
+LOCAL_PATH := $(call my-dir)
 
-# Main Required Packages
-PRODUCT_PACKAGES += \
-    Launcher3 \
-    LiveWallpapersPicker \
-    PrebuiltExchange3Google
+include $(CLEAR_VARS)
+LOCAL_MODULE := PrebuiltExchange3Google
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := PrebuiltExchange3Google/PrebuiltExchange3Google.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
 
-#Custom Packages
-PRODUCT_PACKAGES += \
-    PureNexusSettings \
-    LockClock \
-    WallpaperPicker
-
-# Busybox
-PRODUCT_PACKAGES += \
-    Busybox
-
-# SuperSU FTW
-PRODUCT_COPY_FILES += \
-    vendor/nexus/prebuilt/supersu/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/nexus/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
