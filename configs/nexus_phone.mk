@@ -16,6 +16,7 @@ include vendor/nexus/configs/aosp_fixes.mk
 include vendor/nexus/configs/bootanimation.mk
 include vendor/nexus/configs/nexus_main.mk
 include vendor/nexus/configs/system_additions.mk
+include vendor/nexus/configs/themes_common.mk
 include vendor/nexus/configs/version.mk
 
 # Telephony packages
