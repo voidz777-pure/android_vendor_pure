@@ -13,7 +13,7 @@
 # limitations under the License.
 
 #pure nexus versioning
-export NEXUS_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)
+export NEXUS_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-CMTE
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.purenexus.version=$(NEXUS_VERSION)
