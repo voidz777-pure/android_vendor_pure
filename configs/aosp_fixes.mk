@@ -38,3 +38,9 @@ PRODUCT_COPY_FILES +=  \
     vendor/nexus/prebuilt/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
     vendor/nexus/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
 endif
+
+# Google Keybord
+ifneq ($(filter nexus_tuna,$(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES +=  \
+   vendor/nexus/prebuilt/apps/LatinImeGoogle/LatinImeGoogle.apk:system/app/LatinImeGoogle/LatinImeGoogle.apk
+endif
