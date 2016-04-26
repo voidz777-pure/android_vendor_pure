@@ -32,4 +32,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="molly-user 5.0.2 LRX22G 1649326 release-keys"
 
 PRODUCT_COPY_FILES += \
-    vendor/nexus/prebuilt/bootanimation/molly.zip:system/media/bootanimation.zip
+    vendor/nexus/prebuilt/bootanimation/1080.zip:system/media/bootanimation.zip
