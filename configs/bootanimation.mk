@@ -15,29 +15,29 @@
 # Add Stock Lollipop bootanimation based on device
 ifneq ($(filter nexus_angler,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/nexus/prebuilt/bootanimation/angler.zip:system/media/bootanimation.zip
+        vendor/nexus/prebuilt/bootanimation/1440.zip:system/media/bootanimation.zip
 endif
 ifneq ($(filter nexus_bullhead,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/nexus/prebuilt/bootanimation/bullhead.zip:system/media/bootanimation.zip
+        vendor/nexus/prebuilt/bootanimation/1080.zip:system/media/bootanimation.zip
 endif
 ifneq ($(filter nexus_deb,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/nexus/prebuilt/bootanimation/flo.zip:system/media/bootanimation.zip
+        vendor/nexus/prebuilt/bootanimation/1200.zip:system/media/bootanimation.zip
 endif
 ifneq ($(filter nexus_flo,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/nexus/prebuilt/bootanimation/flo.zip:system/media/bootanimation.zip
+        vendor/nexus/prebuilt/bootanimation/1200.zip:system/media/bootanimation.zip
 endif
 ifneq ($(filter nexus_flounder,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/nexus/prebuilt/bootanimation/flounder.zip:system/media/bootanimation.zip
+        vendor/nexus/prebuilt/bootanimation/1536.zip:system/media/bootanimation.zip
 endif
 ifneq ($(filter nexus_hammerhead,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/nexus/prebuilt/bootanimation/hammerhead.zip:system/media/bootanimation.zip
+        vendor/nexus/prebuilt/bootanimation/1080.zip:system/media/bootanimation.zip
 endif
 ifneq ($(filter nexus_shamu,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/nexus/prebuilt/bootanimation/shamu.zip:system/media/bootanimation.zip
+        vendor/nexus/prebuilt/bootanimation/1440.zip:system/media/bootanimation.zip
 endif
