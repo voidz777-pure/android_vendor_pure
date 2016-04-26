@@ -1,5 +1,4 @@
-# Copyright (C) 2016 The Pure Nexus Project
-# Copyright (C) 2015 KreAch3R
+# Copyright (C) 2015 The Pure Nexus Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,4 +12,30 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(shell find $(LOCAL_DIR) -type f | grep nexus_)
+ifeq (nexus_angler,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_angler.mk
+endif
+ifeq (nexus_bullhead,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_bullhead.mk
+endif
+ifeq (nexus_deb,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_deb.mk
+endif
+ifeq (nexus_flo,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_flo.mk
+endif
+ifeq (nexus_flounder,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_flounder.mk
+endif
+ifeq (nexus_fugu,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_fugu.mk
+endif
+ifeq (nexus_hammerhead,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_hammerhead.mk
+endif
+ifeq (nexus_molly,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_molly.mk
+endif
+ifeq (nexus_shamu,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_shamu.mk
+endif
