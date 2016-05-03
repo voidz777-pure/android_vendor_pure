@@ -28,5 +28,5 @@ PRODUCT_MANUFACTURER := htc
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=volantis \
-    BUILD_FINGERPRINT=google/volantis/flounder:6.0.1/MMB29K/2419427:user/release-keys \
-    PRIVATE_BUILD_DESC="volantis-user 6.0.1 MMB29K 2419427 release-keys"
+    BUILD_FINGERPRINT=google/volantis/flounder:6.0.1/MOB30G/2723637:user/release-keys \
+    PRIVATE_BUILD_DESC="volantis-user 6.0.1 MOB30G 2723637 release-keys"
