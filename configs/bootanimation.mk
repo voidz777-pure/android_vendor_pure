@@ -43,5 +43,5 @@ ifneq ($(filter nexus_shamu,$(TARGET_PRODUCT)),)
 endif
 ifneq ($(filter nexus_tuna,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/nexus/prebuilt/bootanimation/flo.zip:system/media/bootanimation.zip
+        vendor/nexus/prebuilt/bootanimation/800.zip:system/media/bootanimation.zip
 endif
