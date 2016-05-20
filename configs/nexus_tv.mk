@@ -28,6 +28,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Busybox
 
+# SuperSU FTW
+PRODUCT_COPY_FILES += \
+    vendor/nexus/prebuilt/supersu/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip
 # Google property overides
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest
