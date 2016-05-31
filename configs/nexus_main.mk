@@ -24,7 +24,8 @@ PRODUCT_PACKAGES += \
 
 #Custom Packages
 PRODUCT_PACKAGES += \
-    WallpaperPicker
+    PureTools \
+    LockClock
 
 # Busybox
 PRODUCT_PACKAGES += \
