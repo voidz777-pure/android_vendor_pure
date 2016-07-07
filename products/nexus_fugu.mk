@@ -28,5 +28,5 @@ PRODUCT_MANUFACTURER := Asus
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=fugu \
-    BUILD_FINGERPRINT=google/fugu/fugu:6.0.1/MOB30M/2862625:user/release-keys \
-    PRIVATE_BUILD_DESC="fugu-user 6.0.1 MOB30M 2862625 release-keys"
+    BUILD_FINGERPRINT=google/fugu/fugu:6.0.1/MOB30P/2960889:user/release-keys \
+    PRIVATE_BUILD_DESC="fugu-user 6.0.1 MOB30P 2960889 release-keys"
