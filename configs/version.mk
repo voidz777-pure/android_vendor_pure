@@ -13,7 +13,11 @@
 # limitations under the License.
 
 #pure nexus versioning
-export NEXUS_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)
+ifndef PURENEXUS_BUILD_TYPE
+    PURENEXUS_BUILD_TYPE := HOMEMADE
+endif
+
+NEXUS_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-$(PURENEXUS_BUILD_TYPE)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.purenexus.version=$(NEXUS_VERSION)
