@@ -28,5 +28,5 @@ PRODUCT_MANUFACTURER := asus
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=razorg \
-    BUILD_FINGERPRINT=google/razorg/deb:6.0.1/MOB30P/2960889:user/release-keys \
-    PRIVATE_BUILD_DESC="razorg-user 6.0.1 MOB30P 2960889 release-keys"
+    BUILD_FINGERPRINT=google/razorg/deb:6.0.1/MOB30X/3036618:user/release-keys \
+    PRIVATE_BUILD_DESC="razorg-user 6.0.1 MOB30X 3036618 release-keys"
