@@ -42,3 +42,6 @@ endif
 ifeq (nexus_tuna,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_tuna.mk
 endif
+ifeq (nexus_manta,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_manta.mk
+endif
