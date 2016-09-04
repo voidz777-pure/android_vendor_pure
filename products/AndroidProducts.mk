@@ -21,3 +21,6 @@ endif
 ifeq (pure_shamu,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pure_shamu.mk
 endif
+ifeq (pure_tuna,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pure_tuna.mk
+endif
