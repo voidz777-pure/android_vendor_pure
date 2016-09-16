@@ -2,3 +2,4 @@ add_lunch_combo pure_angler-user
 add_lunch_combo pure_bullhead-user
 add_lunch_combo pure_shamu-user
 add_lunch_combo pure_tuna-userdebug
+add_lunch_combo pure_manta-userdebug

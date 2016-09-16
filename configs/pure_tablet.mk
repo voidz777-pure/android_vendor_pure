@@ -1,4 +1,4 @@
-# Copyright (C) 2016 The Pure Experience Project
+# Copyright (C) 2015 The Pure Nexus Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,18 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifeq (pure_angler,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pure_angler.mk
-endif
-ifeq (pure_bullhead,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pure_bullhead.mk
-endif
-ifeq (pure_shamu,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pure_shamu.mk
-endif
-ifeq (pure_tuna,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pure_tuna.mk
-endif
-ifeq (pure_manta,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pure_manta.mk
-endif
+include vendor/pure/configs/aosp_fixes.mk
+include vendor/pure/configs/bootanimation.mk
+include vendor/pure/configs/pure_main.mk
+include vendor/pure/configs/system_additions.mk
+include vendor/pure/configs/version.mk
+
+# Enable SIP+VoIP
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml

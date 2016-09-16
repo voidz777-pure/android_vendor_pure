@@ -29,3 +29,7 @@ ifneq ($(filter pure_tuna,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/pure/prebuilt/bootanimation/shamu.zip:system/media/bootanimation.zip
 endif
+ifneq ($(filter pure_manta,$(TARGET_PRODUCT)),)
+    PRODUCT_COPY_FILES += \
+        vendor/pure/prebuilt/bootanimation/shamu.zip:system/media/bootanimation.zip
+endif
