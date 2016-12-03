@@ -15,13 +15,13 @@
 # Add Stock Lollipop bootanimation based on device
 ifneq ($(filter angler,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/pure/prebuilt/bootanimation/angler.zip:system/media/bootanimation.zip
+        vendor/pure/prebuilt/bootanimation/1440.zip:system/media/bootanimation.zip
 endif
 ifneq ($(filter bullhead,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/pure/prebuilt/bootanimation/bullhead.zip:system/media/bootanimation.zip
+        vendor/pure/prebuilt/bootanimation/1080.zip:system/media/bootanimation.zip
 endif
 ifneq ($(filter shamu,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/pure/prebuilt/bootanimation/shamu.zip:system/media/bootanimation.zip
+        vendor/pure/prebuilt/bootanimation/1440.zip:system/media/bootanimation.zip
 endif
