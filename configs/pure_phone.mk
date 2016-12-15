@@ -27,3 +27,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true
 
+# Pull in Prebuilt applications for phones
+$(call inherit-product-if-exists, vendor/prebuilt/prebuilt.mk)
