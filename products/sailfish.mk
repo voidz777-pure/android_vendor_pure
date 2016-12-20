@@ -15,18 +15,18 @@
 # Include pure telephony configuration
 include vendor/pure/configs/pure_phone.mk
 
-# Inherit AOSP device configuration for marlin
-$(call inherit-product, device/google/marlin/aosp_marlin.mk)
+# Inherit AOSP device configuration for sailfish
+$(call inherit-product, device/google/marlin/aosp_sailfish.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := marlin
+PRODUCT_NAME := sailfish
 PRODUCT_BRAND := google
-PRODUCT_DEVICE := marlin
-PRODUCT_MODEL := Pixel XL
+PRODUCT_DEVICE := sailfish
+PRODUCT_MODEL := Pixel
 PRODUCT_MANUFACTURER := Google
 
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=marlin \
-    BUILD_FINGERPRINT=google/marlin/marlin:7.1.1/NMF26Q/3537182:user/release-keys \
-    PRIVATE_BUILD_DESC="marlin-user 7.1.1 NMF26Q 3537182 release-keys"
+    PRODUCT_NAME=sailfish \
+    BUILD_FINGERPRINT=google/sailfish/sailfish:7.1.1/NMF26Q/3537182:user/release-keys \
+    PRIVATE_BUILD_DESC="sailfish-user 7.1.1 NMF26Q 3537182 release-keys"
