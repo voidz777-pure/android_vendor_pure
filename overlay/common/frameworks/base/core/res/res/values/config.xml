@@ -24,6 +24,10 @@
 
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
+    <!-- Flag indicating whether the assist disclosure can be disabled using
+         ASSIST_DISCLOSURE_ENABLED. -->
+    <bool name="config_allowDisablingAssistDisclosure">true</bool>
+
     <!-- Defines the default set of global actions. Actions may still be disabled or hidden based
          on the current state of the device. -->
     <string-array translatable="false" name="config_globalActionsList">
