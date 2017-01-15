@@ -28,4 +28,5 @@ PRODUCT_PACKAGES += \
 # Custom Packages
 PRODUCT_PACKAGES += \
     Busybox \
-    ThemeInterfacer
+    ThemeInterfacer \
+    OmniStyle
