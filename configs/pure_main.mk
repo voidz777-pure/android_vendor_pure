@@ -27,4 +27,5 @@ PRODUCT_PACKAGES += \
 
 # Custom Packages
 PRODUCT_PACKAGES += \
-    Busybox
+    Busybox \
+    ThemeInterfacer
