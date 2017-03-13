@@ -18,6 +18,9 @@ include vendor/pure/configs/pure_phone.mk
 # Inherit AOSP device configuration for shamu.
 $(call inherit-product, device/moto/shamu/aosp_shamu.mk)
 
+# Inherit arm phone gapps
+$(call inherit-product-if-exists, vendor/gapps/arm-phone-gapps.mk)
+
 # Override AOSP build properties
 PRODUCT_NAME := shamu
 PRODUCT_BRAND := google
