@@ -18,6 +18,9 @@ include vendor/pure/configs/pure_phone.mk
 # Inherit AOSP device configuration for hammerhead
 $(call inherit-product, device/samsung/tuna/aosp_tuna.mk)
 
+# Pull in Prebuilt applications for phones		
+$(call inherit-product-if-exists, vendor/prebuilt/prebuilt.mk)
+
 # Override AOSP build properties
 PRODUCT_NAME := tuna
 PRODUCT_BRAND := google
