@@ -18,6 +18,9 @@ include vendor/pure/configs/pure_phone.mk
 # Inherit AOSP device configuration for angler
 $(call inherit-product, device/huawei/angler/aosp_angler.mk)
 
+# Inherit arm64 phone gapps
+$(call inherit-product-if-exists, vendor/gapps/arm64-phone-gapps.mk)
+
 # Override AOSP build properties
 PRODUCT_NAME := angler
 PRODUCT_BRAND := google

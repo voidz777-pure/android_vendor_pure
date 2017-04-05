@@ -18,6 +18,9 @@ include vendor/pure/configs/pure_phone.mk
 # Inherit AOSP device configuration for marlin
 $(call inherit-product, device/google/marlin/aosp_marlin.mk)
 
+# Inherit arm64 phone gapps
+$(call inherit-product-if-exists, vendor/gapps/arm64-phone-gapps.mk)
+
 # Override AOSP build properties
 PRODUCT_NAME := marlin
 PRODUCT_BRAND := google
