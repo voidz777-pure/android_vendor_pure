@@ -12,22 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Include overlays
-PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/pure/overlay/common
+LOCAL_PATH := $(call my-dir)
 
-# Main Required Packages
-PRODUCT_PACKAGES += \
-    Launcher3 \
-    LiveWallpapersPicker
-
-# Include explicitly to work around Facelock issues
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full
-
-# Custom Packages
-PRODUCT_PACKAGES += \
-    Busybox \
-    ThemeInterfacer \
-    OmniStyle \
-    Turbo
+include $(CLEAR_VARS)
+LOCAL_MODULE := Turbo
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := Turbo/Turbo.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
