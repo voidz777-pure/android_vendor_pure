@@ -16,6 +16,9 @@
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/pure/overlay/common
 
+# Inherit prebuilt apps
+$(call inherit-product-if-exists, vendor/gapps/prebuilt.mk)
+
 # Main Required Packages
 PRODUCT_PACKAGES += \
     Launcher3 \

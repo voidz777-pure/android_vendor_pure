@@ -18,8 +18,8 @@ include vendor/pure/configs/pure_tablet.mk
 # Inherit AOSP device configuration for dragon
 $(call inherit-product, device/google/dragon/aosp_dragon.mk)
 
-# Inherit arm64 tablet gapps
-$(call inherit-product-if-exists, vendor/gapps/arm64-tablet-gapps.mk)
+# Inherit gapps
+$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
 
 # Override AOSP build properties
 PRODUCT_NAME := dragon
