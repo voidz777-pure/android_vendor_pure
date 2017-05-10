@@ -28,5 +28,5 @@ PRODUCT_MANUFACTURER := Samsung
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=yakju \
-    BUILD_FINGERPRINT=google/yakju/tuna:7.0/NRD90M/3085278:user/release-keys \
-    PRIVATE_BUILD_DESC="tuna-user 7.0 NRD90M 3085278 release-keys"
+    BUILD_FINGERPRINT="google/yakju/maguro:4.3/JWR66Y/776638:user/release-keys" \
+    PRIVATE_BUILD_DESC="yakju-user 4.3 JWR66Y 776638 release-keys"
