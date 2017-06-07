@@ -31,5 +31,5 @@ PRODUCT_MANUFACTURER := Google
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=ryu \
-    BUILD_FINGERPRINT=google/ryu/dragon:7.1.2/N2G47O/3852959:user/release-keys \
-    PRIVATE_BUILD_DESC="ryu-user 7.1.2 N2G47O 3852959 release-keys"
+    BUILD_FINGERPRINT=google/ryu/dragon:7.1.2/N2G47W/3938523:user/release-keys \
+    PRIVATE_BUILD_DESC="ryu-user 7.1.2 N2G47W 3938523 release-keys"
